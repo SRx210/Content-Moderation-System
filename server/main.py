@@ -5,8 +5,8 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.config import settings
-from api.routers import health, moderation
+from server.config import settings
+from server.routers import health, moderation
 from inference.onnx_session import ONNXInferenceSession
 
 

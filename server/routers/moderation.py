@@ -4,9 +4,9 @@ import time
 
 from fastapi import APIRouter, Request
 
-from api.schemas.moderation import ModerationRequest, ModerationResponse
-from api.services.preprocessor import preprocess
-from api.services.logger import log_event
+from server.schemas.moderation import ModerationRequest, ModerationResponse
+from server.services.preprocessor import preprocess
+from server.services.logger import log_event
 
 router = APIRouter()
 

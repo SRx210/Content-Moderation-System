@@ -5,7 +5,7 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
-from api.config import settings
+from server.config import settings
 
 LOG_FILE = Path(settings.log_dir) / "moderation.log"
 LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
